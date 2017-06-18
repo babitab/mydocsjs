@@ -1,0 +1,87 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="home-wrapper">
+
+		<div class="menu-bar">
+			<nav class="navbar navbar-inverse navbarfixed-top" role="navigation"> 
+				<div class="container">
+					<div class="navbar-header"> 
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-items"> 
+							<span class="material-icons md-light">menu</span> 
+						</button>
+						<a class="navbar-brand" href="."> <span class="material-icons ">work</span> MyDocs</a> 
+					</div> 
+					<div class="pull-right collapse navbar-collapse" id="navbar-collapse-items"> 
+						<ul class="nav navbar-nav"> 
+							<li ><a href="."> <span class="material-icons">home</span> Home</a></li> 
+							<li class="active"><a href="upload.html"> <span class="material-icons ">file_upload</span> Upload</a></li> 	
+							<li class="dropdown"> 
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+									<span class="material-icons ">account_box</span> 
+								 	<span id="first-name"></span> 
+								 	<span class="material-icons">arrow_drop_down</span>
+								</a> 
+								<ul class="dropdown-menu pull-right"> 
+									<li><a href="updateprofile.html"> <span class="material-icons ">face</span> Update Profile</a></li> 
+									<li><a href="changepass.html"> <span class="material-icons ">lock</span> Change Password</a></li> 
+									<li class="divider"></li>
+									<li><a href="#" id="logout"> <span class="material-icons ">power_settings_new</span> Logout</a></li> 
+								</ul> 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container">
+			<div class="upload-document-container">
+				<h3>Upload Document </h3>
+				<form id="fileUploadForm" class="form-horizontal"  method="POST" enctype="multipart/form-data" role="form">
+					<div class="form-group">
+						<label for="documentType" class="col-sm-5 control-label">Selected Document Type*</label>
+						<div class="col-sm-7">
+							<select name="documentType" id="documentType" class="form-control" required>
+								<option value="SSC Certificate" selected="true">SSC Certificate</option>
+								<option value="HSC Certificate">HSC Certificate</option>
+								<option value="Degree Certificate">Degree Certificate</option>
+								<option value="PAN Card">PAN Card</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="documentFile" class="col-sm-5 control-label">Upload Document* <br> <em>(Max. Limit is 1MB)</em></label>
+						<div class="col-sm-7">
+							<input type="file" name="documentFile" id="documentFile" class="form-control" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="documentDescription" class="col-sm-5 control-label">Document Description* <br> <em>(Max. 50 Characters)</em></label>
+						<div class="col-sm-7">
+							<input type="text" name="documentDescription" id="documentDescription" class="form-control" required>
+						</div>
+					</div>
+					<div class="form-group upload-button" id="fileUpload" > 
+						<div class="col-sm-offset-5 col-sm-7"> 
+							<button type="submit" class="pull-right">Upload <span class="material-icons md-18">file_upload</span></button>
+						</div> 
+					</div>
+					<p> <b><em>File type must be of pdf, docx.</em></b></p>
+				</form>
+			</div>
+		</div>
+	
+	</div>
+		<!-- include required javascript files -->
+		<script src="./javascript/jquery.min.js"></script>
+		<script src="./javascript/bootstrap.min.js"></script>
+	 	<script src="./javascript/main.js"></script>
+</body>
+</html>	

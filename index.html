@@ -1,0 +1,81 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="home-wrapper">
+
+		<div class="menu-bar">
+			<nav class="navbar navbar-inverse navar-fixed-top" role="navigation"> 
+				<div class="container">
+					<div class="navbar-header"> 
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-items"> 
+							<span class="material-icons md-light">menu</span> 
+						</button>
+						<a class="navbar-brand" href="."> <span class="material-icons ">work</span> MyDocs</a> 
+					</div> 
+					<div class="pull-right collapse navbar-collapse" id="navbar-collapse-items"> 
+						<ul class="nav navbar-nav"> 
+							<li class="active"><a href="."> <span class="material-icons ">home</span> Home</a></li> 
+							<li ><a href="upload.html"> <span class="material-icons ">file_upload</span> Upload</a></li> 
+							<li class="dropdown"> 
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+									<span class="material-icons ">account_box</span> 
+								 	<span id="first-name"></span> 
+								 	<span class="material-icons ">arrow_drop_down</span>
+								</a> 
+								<ul class="dropdown-menu pull-right"> 
+									<li><a href="updateprofile.html"> <span class="material-icons ">face</span> Update Profile</a></li> 
+									<li><a href="changepass.html"> <span class="material-icons ">lock</span> Change Password</a></li> 
+									<li class="divider"></li>
+									<li><a href="#" id="logout"> <span class="material-icons ">power_settings_new</span> Logout</a></li> 
+								</ul> 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="container">
+			<div class="row" id="user_documents_container">	
+				<div class="col-sm-12" id="noFileDiv">
+					<div class="user-documents">
+						<h3>Uploaded Documents</h3>	
+						<p class="no-documents">No document have been uploaded.</p>
+					</div>
+				</div>
+				<div id="fileDiv">
+					<div class="col-sm-5">
+						<div class="user-documents">
+							<h3 class="document-type"></h3>
+							<div class="row document">
+								<div class="col-sm-4 key">
+									Description
+								</div>
+								<div class="col-sm-8 value document-description">
+										
+								</div>
+								<div class="col-xs-6 action download">
+									<a href="#" ><span>Download</span> &nbsp;<span class="material-icons md-18">file_download</span></a>
+								</div>
+								<div class="col-xs-6 action delete">
+									<a href="#" ><span>Delete</span> &nbsp;<span class="material-icons md-18">delete</span></a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>								
+			</div>
+		</div>
+	</div>
+	<!-- include required javascript files -->
+	<script src="./javascript/jquery.min.js"></script>
+	<script src="./javascript/bootstrap.min.js"></script>
+ 	<script src="./javascript/main.js"></script>
+</body>
+</html>

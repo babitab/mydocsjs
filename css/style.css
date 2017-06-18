@@ -1,0 +1,450 @@
+*{
+	padding: 0; 
+	margin: 0;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(./../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(./../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(./../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  vertical-align: middle;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*Rules for sizing the icon.*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/*Rules for using icons as black on a light background.*/
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/*// Rules for using icons as white on a dark background.*/
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+.wrapper{
+	height: 100%; 
+	width: 100%; 
+	background-color: rgb(233, 234, 237);
+	display: table;
+}
+
+
+/*
+* login css goes here
+*/
+.wrapper .login-container{
+	background: white;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,.2);
+	max-width: 420px;
+	margin: 5% auto;
+}
+.wrapper .login-container h3{
+	background: rgb(44, 62, 80);
+	color: white;
+	text-transform: uppercase;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 30px;
+	font-size: 20px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.wrapper .login-container form{
+	padding: 20px 20px 20px 30px; 
+}
+
+.wrapper .login-container form .input-group{
+	padding: 10px 0;
+}
+.wrapper .login-container form .input-group .input-group-addon{
+	border-radius: 0;
+	border: none;
+	background: rgb(127, 140, 141);
+	color: white;
+	padding: 0 12px;
+}
+.wrapper .login-container form .input-group input{
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 1px solid rgb(127, 140, 141);
+	border-radius: 0;
+	background: none;
+}
+.wrapper .login-container form #login{
+	margin-top: 10px;
+	text-align: right;
+}
+.wrapper .login-container form #login button{
+	background: rgb(52, 73, 94);
+	border: none;
+	padding: 10px 30px;
+	color: white;
+	font-weight: bold;
+	transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+	outline: none;
+	border-radius: 2px;
+}
+.wrapper .login-container form #login button:hover{
+	background: rgba(52, 73, 94, .9);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.wrapper .login-container form #login button:active{
+	background: rgba(52, 73, 94, .8);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper .login-container .other-options{
+	margin-top: 10px;
+	padding: 10px 5px 10px 30px;
+	background: rgb(127, 140, 141);
+}
+.wrapper .login-container .other-options{
+	padding: 10px 10px 10px 30px;
+	background: rgb(127, 140, 141);
+}
+.wrapper .login-container .other-options a{
+	color: white; 
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/*
+* sign up css goes here
+*/
+
+.wrapper .signup-container{
+	max-width: 600px;
+	margin:  5% auto;
+	background: white;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,.2);
+}
+.wrapper .signup-container h3{
+	background: rgb(41, 128, 185);
+	color: white;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 30px;
+	font-size: 20px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.wrapper .signup-container form{
+	padding: 20px 20px 20px 30px; 
+}
+
+.wrapper .signup-container form  .form-group{
+	position: relative;
+	padding-bottom: 10px;
+}
+.wrapper .signup-container form  .form-group input{
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 1px solid silver;
+	border-radius: 0;
+	padding: 0;
+}
+.wrapper .signup-container form  .form-group label{
+	position: absolute;
+	left: 0;
+	top: 7px;
+	font-size: 15px;
+	pointer-events: none;
+	color: rgb(178, 178, 178);
+	transition: top .15s ease-in-out .05s, color linear .5s;
+}
+.wrapper .signup-container form  .form-group input:focus,
+.wrapper .signup-container form  .form-group input.has-value{
+	border-color: rgb(74, 163, 223);
+}
+.wrapper .signup-container form  .form-group input:focus + label,
+.wrapper .signup-container form  .form-group input.has-value + label{
+	top: -15px;
+	font-size: 13px;
+	color: rgb(41, 128, 185);
+}
+.wrapper .signup-container form #signup {
+	text-align: right;
+}
+.wrapper .signup-container form #signup button{
+	background: rgb(41, 128, 185);
+	border: none;
+	padding: 10px 30px;
+	color: white;
+	font-weight: bold;
+	transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+	outline: none;
+	border-radius: 2px;
+}
+.wrapper .signup-container form #signup button:hover{
+	background: rgba(41, 128, 185, .9);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.wrapper .signup-container form #signup button:active{
+	background: rgba(41, 128, 185, .8);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper .signup-container .other-options{
+	margin-top: 10px;
+	padding: 10px 5px 10px 30px;
+	background: rgb(127, 140, 141);
+}
+
+.wrapper .signup-container .other-options a{
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+}
+
+
+/*
+* home css goes here
+*/
+.home-wrapper{
+	background: rgb(233, 234, 237);
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+
+.menu-bar{
+	margin-bottom: 100px;
+}
+.menu-bar .navbar{
+	border-radius: 0;
+	box-shadow:0 6px 12px rgba(0,0,0,.175);
+}
+
+
+/* css for upload document*/
+.upload-document-container{
+	max-width: 600px;
+	margin: 0px auto;
+	background: white;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.1);
+	border-radius: 2px;
+}
+.upload-document-container h3{
+	color: #21a1e1;
+	font-family: monospace, serif;
+	background: rgb(52, 73, 94);
+	color:  white;
+	padding: 15px 10px 15px 20px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	border-radius: 2px 2px 0 0;
+}
+.upload-document-container form {
+	padding: 15px 10px 15px 20px;
+}
+.upload-document-container form .form-group input{
+	height: auto;
+}
+
+.upload-document-container form .upload-button button{
+	border: none;
+	padding: 8px 30px;
+	font-weight: 600;
+	background: rgb(39, 174, 96);
+	outline: none;
+	color: white;
+	border-radius: 2px;
+	transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+
+.upload-document-container form .upload-button button:hover{
+	box-shadow:0 2px 4px rgba(0,0,0,.175);
+	background: rgba(39, 174, 96, .9);
+}
+.upload-document-container form .upload-button button:active{
+	box-shadow:0 5px 10px rgba(0,0,0,.175);
+	background: rgba(39, 174, 96, .8);
+}
+
+
+/* css for users document*/
+.user-documents{
+	padding-bottom: 10px;
+}
+.user-documents h3{
+	color: #21a1e1;
+	font-family: monospace, serif;
+	background: rgb(52, 73, 94);
+	color:  white;
+	padding: 15px 10px 15px 20px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	border-radius: 2px 2px 0 0;
+}
+.user-documents p.no-documents{
+	background: white;
+	text-align: center;
+	padding: 20px 5px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.1);
+	font-family: monospace;
+	color: rgb(52, 73, 94);
+	font-weight: 600;
+}
+.user-documents .document{
+	margin:  10px auto;
+	padding: 10px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.1);
+	background: white;
+}
+.user-documents .document .key, .user-documents .document .value{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.user-documents .document .action{
+	margin-top: 20px;
+}
+
+.user-documents .document .action a{	
+	text-transform: uppercase;
+	border-radius: 2px;
+	padding: 8px 30px;
+	display: inline-block;
+	margin: 10px 1px;
+	color: rgba(255,255,255,.84);
+	text-decoration: none;
+	transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+.user-documents .document .action a:hover{
+	box-shadow:0 2px 4px rgba(0,0,0,.175);
+}
+.user-documents .document .action a:active{
+	box-shadow:0 6px 12px rgba(0,0,0,.175);
+}
+
+.user-documents .document .action.delete{
+	text-align: right;
+}
+.user-documents .document .action.download a{
+	background: rgb(39, 174, 96);
+}
+.user-documents .document .action.download a:hover{
+	background: rgba(39, 174, 96, .9);
+}
+.user-documents .document .action.delete a{
+	background: rgb(192, 57, 43);
+}
+.user-documents .document .action.delete a:hover{
+	background: rgba(192, 57, 43, .9);
+}
+
+
+/* css for change password*/
+.changepass-container{
+	background: white;
+	max-width: 500px;
+	margin: 10% auto;
+}
+
+.changepass-container h3{
+	background: rgb(41, 128, 185);
+	color: white;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 30px;
+	font-size: 20px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.changepass-container form{
+	padding: 20px 20px 20px 30px; 
+}
+.changepass-container form #changepass {
+	text-align: right;
+}
+.changepass-container form #changepass button{
+	background: rgb(41, 128, 185);
+	border: none;
+	padding: 10px 30px;
+	color: white;
+	font-weight: bold;
+	transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+	outline: none;
+	border-radius: 2px;
+}
+.changepass-container form #changepass button:hover{
+	background: rgba(41, 128, 185, .9);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.changepass-container form #changepass button:active{
+	background: rgba(41, 128, 185, .8);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* css for update profile password*/
+.profile-container{
+	background: white;
+	max-width: 500px;
+	margin: 10% auto;
+}
+
+.profile-container h3{
+	background: rgb(44, 62, 80);
+	color: white;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 30px;
+	font-size: 20px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.profile-container form{
+	padding: 20px 20px 20px 30px; 
+}
+.profile-container form #updateProfile {
+	text-align: right;
+}
+.profile-container form #updateProfile button{
+	background: rgb(44, 62, 80);
+	border: none;
+	padding: 10px 30px;
+	color: white;
+	font-weight: bold;
+	transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+	outline: none;
+	border-radius: 2px;
+}
+.profile-container form #updateProfile button:hover{
+	background: rgba(44, 62, 80, .9);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.profile-container form #updateProfile button:active{
+	background: rgba(44, 62, 80, .8);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sign Up</title>
+ 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ 	<div class="wrapper">
+ 		<div class="menu-bar">
+			<nav class="navbar navbar-inverse nabar-fixed-top" role="navigation"> 
+				<div class="container">
+					<div class="navbar-header"> 
+						<a class="navbar-brand" href="#"><span class="material-icons">work</span> MyDocs</a> 
+					</div> 
+				</div>
+			</nav>
+		</div>
+	 	<div class="signup-container">
+	 		<h3>Sign up</h3>
+	 		<form id="signupForm">
+	 			<div class="row">
+	 				<div class="col-sm-6">
+	 					<div class="form-group">
+	 						<input type="text" name="firstName" id="firstName" class="form-control" required />
+		 					<label for="firstName">First Name*</label>
+	 					</div>
+		 			</div>
+		 			<div class="col-sm-6">
+		 				<div class="form-group">
+			 				<input type="text" name="lastName" id="lastName" class="form-control"  autocomplete="false"
+			 				/>
+			 				<label for="lastName">Last Name</label>
+			 			</div>
+		 			</div>
+	 			</div>
+	 			<div class="row">
+	 				<div class="col-sm-12">
+						<div class="form-group">
+			 				<input type="email" name="email" id="email" class="form-control" required autocomplete="false"
+			 				/>
+			 				<label for="email">Email*</label>
+			 			</div>
+					</div>	
+	 			</div>
+	 			<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+			 				<input type="password" name="password" id="password" class="form-control" required/>
+			 				<label for="password">Password*</label>
+			 			</div>
+			 		</div>	
+					<div class="col-sm-6">
+						<div class="form-group">
+			 				<input type="password" name="repassword" id="repassword" class="form-control" required/>
+			 				<label for="repassword">Re-Password*</label>
+			 			</div>
+					</div>
+				</div>	
+	 			<div  id="signup">
+	 				<button type="submit">Submit</button>
+	 			</div>
+	 		</form>
+	 		<div class="other-options">
+		 			<a href="login.html">Already have an account ?</a>
+		 	</div>
+	 	</div>
+ 	</div>
+ 	<script src="./javascript/jquery.min.js"></script>
+ 	<script src="./javascript/main.js"></script>
+ </body>
+</html>
